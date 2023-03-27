@@ -23,6 +23,15 @@ public class AnalyticsCounter {
     writer.writeSymptoms(symptoms); 
   }
 
+  /**
+  * Count the occurrences of each symptom present in a list.
+  *
+  * @param symptoms raw list of symptoms
+  *
+  * @return HashMap of counted symptoms. One symptom and its occurrences per line. 
+  * @author Sébastien Cappon
+  * @version 1.3
+  */
   public Map<String, Integer> countSymptoms(List<String> symptoms) {
     Map<String, Integer> symptomsOccurencies = new HashMap<String, Integer>();
     
@@ -36,7 +45,16 @@ public class AnalyticsCounter {
 
     return symptomsOccurencies;
   }
-  
+
+  /**
+  * Sorts a Map in ascending order (alphabetical order in this case).
+  *
+  * @param symptoms Unordered Map (list of symptoms : occurrences in this case)
+  *
+  * @return Ordered TreeMap of counted symptoms.
+  * @author Sébastien Cappon
+  * @version 1.3
+  */
   public Map<String, Integer> sortSymptoms(Map<String, Integer> symptoms) {
     Map<String, Integer> sortedSymptoms = new TreeMap<String, Integer>();
 

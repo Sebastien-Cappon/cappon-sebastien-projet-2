@@ -8,6 +8,12 @@ import java.util.Map;
 
 public class WriteSymptomDataToFile implements ISymptomWriter {
   
+  /**
+  * Write a Map in a file named result.out, one line per line.
+  *
+  * @author Sébastien Cappon
+  * @version 1.4
+  */
   @Override
   public void writeSymptoms(Map<String, Integer> symptoms) {
     try {
