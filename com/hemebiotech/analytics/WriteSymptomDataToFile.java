@@ -6,7 +6,6 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class WriteSymptomDataToFile implements ISymptomWriter {
-  // chemin du fichier de destination
   private String filepathTo;
 	
 	public WriteSymptomDataToFile (String filepathTo) {

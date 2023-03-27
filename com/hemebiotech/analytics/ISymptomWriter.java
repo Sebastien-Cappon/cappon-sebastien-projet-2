@@ -8,6 +8,5 @@ import java.util.Map;
  *
  */
 public interface ISymptomWriter {
-    // Toutes les méthodes d'une interface sont obligatoirement publiques
     void writeSymptoms(Map<String, Integer> symptoms);
 }
